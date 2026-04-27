@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram Engagement Rate Calculator 2025 – Free Tool</title>
+  <meta name="description" content="Free Instagram engagement rate calculator. Calculate your Instagram ER instantly and find out what brands will pay for your sponsored posts." />
+  <meta name="keywords" content="instagram engagement rate calculator, instagram engagement rate, how to calculate instagram engagement rate, instagram influencer calculator" />
+  <link rel="canonical" href="https://creatorcalc.com/instagram-engagement-calculator.html" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <nav class="nav-inner">
+      <a href="index.html" class="logo">Creator<span>Calc</span></a>
+      <ul class="nav-links">
+        <li><a href="youtube-money-calculator.html">YouTube</a></li>
+        <li><a href="tiktok-engagement-calculator.html">TikTok</a></li>
+        <li><a href="sponsorship-rate-calculator.html">Sponsorships</a></li>
+        <li><a href="content-creator-income-estimator.html">Income</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="calc-page">
+  <div class="container-sm">
+    <div class="calc-page-header">
+      <div class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Instagram Engagement Rate Calculator</span></div>
+      <h1>Instagram Engagement Rate Calculator</h1>
+      <p>Find your true Instagram engagement rate and discover what brands are willing to pay for your reach. Updated for 2025 Instagram algorithm.</p>
+    </div>
+    <div class="calc-layout">
+      <div class="calc-panel">
+        <h2>Your Instagram Stats</h2>
+        <div class="form-group">
+          <label for="ig-followers">Total Followers</label>
+          <div class="input-with-icon"><span class="icon">👥</span><input type="number" id="ig-followers" value="25000" min="1" /></div>
+        </div>
+        <div class="form-group">
+          <label for="ig-likes">Avg. Likes per Post</label>
+          <div class="input-with-icon"><span class="icon">❤️</span><input type="number" id="ig-likes" value="800" min="0" /></div>
+        </div>
+        <div class="form-group">
+          <label for="ig-comments">Avg. Comments per Post</label>
+          <div class="input-with-icon"><span class="icon">💬</span><input type="number" id="ig-comments" value="45" min="0" /></div>
+        </div>
+        <div class="form-group">
+          <label for="ig-saves">Avg. Saves per Post</label>
+          <div class="input-with-icon"><span class="icon">🔖</span><input type="number" id="ig-saves" value="120" min="0" /></div>
+        </div>
+        <div class="form-group">
+          <label for="ig-type">Content Type</label>
+          <select id="ig-type">
+            <option value="1.0">Feed Posts (Photos)</option>
+            <option value="1.3" selected>Carousels</option>
+            <option value="0.7">Reels</option>
+            <option value="0.5">Stories</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" style="width:100%;margin-top:8px;" onclick="calcIG()">Calculate →</button>
+      </div>
+      <div class="calc-panel">
+        <h2>Your Results</h2>
+        <div class="result-main">
+          <div class="result-label">Engagement Rate</div>
+          <div class="result-value" id="ig-er">3.86%</div>
+          <div class="result-sub" id="ig-rating">⭐ Above Average</div>
+        </div>
+        <div class="result-breakdown">
+          <div class="breakdown-row"><span class="bl">Total Interactions/Post</span><span class="bv" id="ig-total">965</span></div>
+          <div class="breakdown-row"><span class="bl">Instagram Avg ER</span><span class="bv yellow">1.94%</span></div>
+          <div class="breakdown-row"><span class="bl">vs. Platform Average</span><span class="bv green" id="ig-vs">+99%</span></div>
+          <div class="breakdown-row"><span class="bl">Est. Reach per Post</span><span class="bv" id="ig-reach">~8,750</span></div>
+          <div class="breakdown-row"><span class="bl">Sponsored Post Value</span><span class="bv green" id="ig-value">$125–$250</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="ad-slot">Advertisement</div>
+    <div class="seo-content">
+      <h2>What Is a Good Instagram Engagement Rate in 2025?</h2>
+      <p>Instagram's average engagement rate dropped significantly between 2020 and 2025 as the platform grew. Today, the platform average is approximately <strong>1.94%</strong> for feed posts. Carousels perform 3x better than single images on average, while Reels can see wildly variable results depending on the For You distribution.</p>
+      <p>A good Instagram engagement rate depends heavily on follower count. Nano-influencers (under 10K) typically see 5–8% ER, while celebrities with 10M+ followers may see rates below 0.5%.</p>
+      <h2>Instagram Engagement Rate Benchmarks by Follower Count</h2>
+      <ul>
+        <li><strong>Under 10K (Nano):</strong> 5–8% average, >8% is excellent</li>
+        <li><strong>10K–100K (Micro):</strong> 2–5% average, >5% is excellent</li>
+        <li><strong>100K–500K (Mid-Tier):</strong> 1–3% average, >3.5% is excellent</li>
+        <li><strong>500K–1M (Macro):</strong> 0.5–1.5% average, >2% is excellent</li>
+        <li><strong>1M+ (Mega):</strong> 0.2–0.8% average, >1% is excellent</li>
+      </ul>
+      <h2>Why Saves Are the Most Important Instagram Metric</h2>
+      <p>Instagram's 2025 algorithm weighs <strong>saves</strong> more heavily than likes or comments as a signal of content quality. A post with 100 saves tells the algorithm that viewers found the content valuable enough to return to, triggering broader distribution. If you want to grow, focus on creating content that people will save — tutorials, checklists, infographics, and inspirational content outperform entertainment in saves.</p>
+      <hr class="divider" />
+      <h2>FAQ</h2>
+      <div class="faq-item"><div class="faq-q">How do brands calculate Instagram sponsorship rates?</div><div class="faq-a">Most brands use a CPM model: $10–$20 per 1,000 followers as a baseline, then adjust up or down based on engagement rate, niche relevance, and exclusivity. A micro-influencer with 50K followers and 5% ER will typically earn $200–$500 per post.</div></div>
+      <div class="faq-item"><div class="faq-q">Does Instagram show engagement rate in analytics?</div><div class="faq-a">Instagram Professional Dashboard shows reach, impressions, and interactions but doesn't calculate engagement rate directly. Use this calculator to compute it manually from your post stats.</div></div>
+      <div class="faq-item"><div class="faq-q">Do Reels have higher engagement rates than photos?</div><div class="faq-a">Reels often generate more views but lower engagement rates as a percentage of followers, because many views come from non-followers who are less likely to interact. For brand deals, feed posts and carousels often show better "engaged audience" metrics.</div></div>
+    </div>
+  </div>
+</main>
+<section class="related-section">
+  <div class="container">
+    <h2 class="section-title">More Creator Tools</h2>
+    <div class="tools-grid" style="grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));">
+      <a href="tiktok-engagement-calculator.html" class="tool-card"><div class="tool-icon" style="background:rgba(0,242,234,0.12)">🎵</div><div class="tool-tag tag-tiktok">TikTok</div><h3>TikTok Engagement Calculator</h3><p>Calculate TikTok engagement rate and sponsorship value.</p></a>
+      <a href="sponsorship-rate-calculator.html" class="tool-card"><div class="tool-icon" style="background:rgba(16,185,129,0.12)">💰</div><div class="tool-tag tag-money">Earnings</div><h3>Sponsorship Rate Calculator</h3><p>Find out how much to charge for brand deals.</p></a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer"><div class="container"><div class="footer-links"><a href="index.html">Home</a><a href="youtube-money-calculator.html">YouTube</a><a href="tiktok-engagement-calculator.html">TikTok</a></div><p>© 2025 CreatorCalc.</p></div></footer>
+<script src="js/main.js"></script>
+<script>
+  ['ig-followers','ig-likes','ig-comments','ig-saves','ig-type'].forEach(id => {
+    document.getElementById(id).addEventListener('input', calcIG);
+    document.getElementById(id).addEventListener('change', calcIG);
+  });
+  function calcIG() {
+    const followers = parseFloat(document.getElementById('ig-followers').value) || 1;
+    const likes = parseFloat(document.getElementById('ig-likes').value) || 0;
+    const comments = parseFloat(document.getElementById('ig-comments').value) || 0;
+    const saves = parseFloat(document.getElementById('ig-saves').value) || 0;
+    const multiplier = parseFloat(document.getElementById('ig-type').value);
+    const total = likes + comments + saves;
+    const er = (total / followers * 100) * multiplier;
+    const reach = followers * 0.35;
+    const value = followers / 1000 * 5 * (er / 1.94);
+    document.getElementById('ig-er').textContent = er.toFixed(2) + '%';
+    document.getElementById('ig-total').textContent = total.toLocaleString();
+    const vsAvg = ((er - 1.94) / 1.94 * 100);
+    const vsEl = document.getElementById('ig-vs');
+    vsEl.textContent = (vsAvg >= 0 ? '+' : '') + vsAvg.toFixed(0) + '%';
+    vsEl.className = 'bv ' + (vsAvg >= 0 ? 'green' : '');
+    document.getElementById('ig-reach').textContent = '~' + Math.round(reach).toLocaleString();
+    document.getElementById('ig-value').textContent = '$' + Math.round(value * 0.8) + '–$' + Math.round(value * 1.2);
+    let rating = er >= 5 ? '🏆 Excellent' : er >= 2 ? '⭐ Above Average' : er >= 1 ? '📊 Average' : '⚠️ Below Average';
+    document.getElementById('ig-rating').textContent = rating;
+  }
+  calcIG();
+</script>
+</body>
+</html>

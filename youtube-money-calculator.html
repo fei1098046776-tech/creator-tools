@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Money Calculator 2025 – Estimate Your YouTube Earnings</title>
+  <meta name="description" content="Free YouTube money calculator. Enter your views, niche, and RPM to estimate how much money you can make on YouTube monthly and yearly." />
+  <meta name="keywords" content="youtube money calculator, how much does youtube pay, youtube earnings calculator, youtube revenue calculator, youtube RPM calculator" />
+  <link rel="canonical" href="https://creatorcalc.com/youtube-money-calculator.html" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <nav class="nav-inner">
+      <a href="index.html" class="logo">Creator<span>Calc</span></a>
+      <ul class="nav-links">
+        <li><a href="youtube-money-calculator.html">YouTube</a></li>
+        <li><a href="tiktok-engagement-calculator.html">TikTok</a></li>
+        <li><a href="sponsorship-rate-calculator.html">Sponsorships</a></li>
+        <li><a href="content-creator-income-estimator.html">Income</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="calc-page">
+  <div class="container-sm">
+
+    <div class="calc-page-header">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span>YouTube Money Calculator</span>
+      </div>
+      <h1>YouTube Money Calculator</h1>
+      <p>Estimate how much you can earn on YouTube based on your monthly views, niche, and monetization settings. Results based on real 2025 RPM data.</p>
+    </div>
+
+    <div class="calc-layout">
+      <!-- INPUT PANEL -->
+      <div class="calc-panel">
+        <h2>Your Channel Stats</h2>
+
+        <div class="form-group">
+          <label for="monthly-views">Monthly Video Views</label>
+          <div class="input-with-icon">
+            <span class="icon">👁</span>
+            <input type="number" id="monthly-views" placeholder="e.g. 100000" value="100000" min="0" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="niche">Channel Niche</label>
+          <select id="niche">
+            <option value="14">Finance & Investing (RPM $12–18)</option>
+            <option value="10">Business & Entrepreneurship (RPM $8–12)</option>
+            <option value="6">Technology & Software (RPM $5–8)</option>
+            <option value="5" selected>How-To & Education (RPM $4–7)</option>
+            <option value="4">AI Tools & Productivity (RPM $3–6)</option>
+            <option value="3">Lifestyle & Vlogs (RPM $2–4)</option>
+            <option value="2.5">Gaming (RPM $2–4)</option>
+            <option value="2">Entertainment (RPM $1.5–3)</option>
+            <option value="1.5">Music (RPM $1–2)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Ad Click-Through Rate (CTR %)</label>
+          <div class="range-row">
+            <input type="range" id="ctr" min="0.5" max="5" step="0.1" value="2" />
+            <span class="range-value" id="ctr-val">2%</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Monetized Views Rate (%)</label>
+          <div class="range-row">
+            <input type="range" id="mon-rate" min="40" max="90" step="5" value="70" />
+            <span class="range-value" id="mon-val">70%</span>
+          </div>
+        </div>
+
+        <button class="btn btn-primary" id="calc-btn" style="width:100%;margin-top:8px;" onclick="calculate()">
+          Calculate Earnings →
+        </button>
+      </div>
+
+      <!-- RESULT PANEL -->
+      <div class="calc-panel">
+        <h2>Estimated Earnings</h2>
+
+        <div class="result-main">
+          <div class="result-label">Monthly Earnings</div>
+          <div class="result-value" id="monthly-earn">$350.00</div>
+          <div class="result-sub" id="monthly-range">Estimated range: $280 – $420</div>
+        </div>
+
+        <div class="result-breakdown">
+          <div class="breakdown-row">
+            <span class="bl">Yearly Estimate</span>
+            <span class="bv green" id="yearly-earn">$4,200</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="bl">Estimated RPM</span>
+            <span class="bv" id="rpm-val">$5.00</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="bl">Monetized Views</span>
+            <span class="bv" id="mon-views">70,000</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="bl">CPM (Advertiser)</span>
+            <span class="bv yellow" id="cpm-val">~$10.00</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="bl">YouTube's Cut</span>
+            <span class="bv">45%</span>
+          </div>
+        </div>
+
+        <p style="font-size:0.78rem; color:var(--text-dim); margin-top:16px; line-height:1.6;">
+          ⚠️ Estimates only. Actual earnings vary by geography, seasonal trends, and video type.
+        </p>
+      </div>
+    </div>
+
+    <!-- AD SLOT (middle = highest CTR) -->
+    <div class="ad-slot" id="ad-middle">
+      <!-- Google AdSense -->
+      Advertisement
+    </div>
+
+    <!-- SEO CONTENT -->
+    <div class="seo-content">
+      <h2>How Much Does YouTube Pay Per 1,000 Views in 2025?</h2>
+      <p>YouTube pays creators through its Partner Program (YPP) using a metric called <strong>RPM (Revenue Per Mille)</strong> — the amount you earn per 1,000 views after YouTube takes its 45% cut. In 2025, the average YouTube RPM across all niches ranges from <strong>$1.50 to $18</strong>, depending heavily on your channel category and audience location.</p>
+
+      <p>Finance channels consistently see the highest RPMs ($12–$18), because advertisers in that niche pay premium rates to reach high-intent audiences. Gaming and entertainment channels typically earn less ($1.50–$4) but can compensate with massive view counts.</p>
+
+      <h2>YouTube RPM by Niche — 2025 Data</h2>
+      <ul>
+        <li><strong>Finance & Investing:</strong> $12–18 RPM</li>
+        <li><strong>Business & Marketing:</strong> $8–12 RPM</li>
+        <li><strong>Technology & Reviews:</strong> $5–8 RPM</li>
+        <li><strong>Education & How-To:</strong> $4–7 RPM</li>
+        <li><strong>AI & Productivity:</strong> $3–6 RPM</li>
+        <li><strong>Gaming:</strong> $2–4 RPM</li>
+        <li><strong>Entertainment / Vlogs:</strong> $1.5–3 RPM</li>
+      </ul>
+
+      <h2>How to Increase Your YouTube Earnings</h2>
+      <h3>1. Shift toward high-RPM topics</h3>
+      <p>Even occasional finance or business-adjacent videos can boost your channel's average RPM significantly. Creators in general lifestyle niches often increase RPM by 40–60% by adding videos about budgeting, side income, or career topics.</p>
+
+      <h3>2. Target US, UK, Canadian audiences</h3>
+      <p>YouTube ad rates are dramatically higher in English-speaking markets. A channel with 100K views from the US might earn 5–10x more than the same views from South Asia or Southeast Asia.</p>
+
+      <h3>3. Enable all ad formats</h3>
+      <p>Enable skippable ads, non-skippable ads, bumper ads, overlay ads, and sponsored cards. Creators who enable all formats report 20–35% higher RPM than those using only default settings.</p>
+
+      <hr class="divider" />
+
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <div class="faq-q" id="faq1">How many views do you need to make $1,000/month on YouTube?</div>
+        <div class="faq-a" id="faq1-a">At an average RPM of $5, you'd need roughly 200,000 monetized views per month. With a higher-RPM niche like finance ($14 RPM), you'd only need about 71,000 views. The key lever is niche, not just views.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" id="faq2">What is the difference between RPM and CPM on YouTube?</div>
+        <div class="faq-a" id="faq2-a">CPM (Cost Per Mille) is what advertisers pay per 1,000 ad impressions. RPM is what you actually receive per 1,000 views after YouTube takes its 45% revenue share. So if CPM is $10, your RPM will be approximately $5.50.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" id="faq3">Do YouTube Shorts earn the same as regular videos?</div>
+        <div class="faq-a" id="faq3-a">No. YouTube Shorts RPM is significantly lower — typically $0.03–$0.08 per 1,000 views. YouTube pools ad revenue from Shorts into a creator fund and distributes it differently. Long-form videos remain far more lucrative per view.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" id="faq4">When does YouTube pay you?</div>
+        <div class="faq-a" id="faq4-a">YouTube pays monthly, typically between the 21st–26th of each month, for earnings from the previous month. You need a minimum threshold of $100 in your AdSense account before payment is released.</div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- RELATED TOOLS -->
+<section class="related-section">
+  <div class="container">
+    <h2 class="section-title">More Creator Tools</h2>
+    <p class="section-sub">Explore our other free calculators</p>
+    <div class="tools-grid" style="grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));">
+      <a href="sponsorship-rate-calculator.html" class="tool-card">
+        <div class="tool-icon" style="background:rgba(16,185,129,0.12)">💰</div>
+        <div class="tool-tag tag-money">Earnings</div>
+        <h3>Sponsorship Rate Calculator</h3>
+        <p>Find out how much to charge brands for sponsored YouTube videos.</p>
+      </a>
+      <a href="tiktok-engagement-calculator.html" class="tool-card">
+        <div class="tool-icon" style="background:rgba(0,242,234,0.12)">🎵</div>
+        <div class="tool-tag tag-tiktok">TikTok</div>
+        <h3>TikTok Engagement Rate Calculator</h3>
+        <p>See how your TikTok engagement compares to top creators.</p>
+      </a>
+      <a href="content-creator-income-estimator.html" class="tool-card">
+        <div class="tool-icon" style="background:rgba(124,58,237,0.12)">📊</div>
+        <div class="tool-tag tag-income">All Platforms</div>
+        <h3>Creator Income Estimator</h3>
+        <p>Combine all your income streams into one projection.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="youtube-money-calculator.html">YouTube</a>
+      <a href="tiktok-engagement-calculator.html">TikTok</a>
+      <a href="sponsorship-rate-calculator.html">Sponsorships</a>
+    </div>
+    <p>© 2025 CreatorCalc. Estimates are for educational purposes only.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  const viewsEl = document.getElementById('monthly-views');
+  const nicheEl = document.getElementById('niche');
+  const ctrEl = document.getElementById('ctr');
+  const monEl = document.getElementById('mon-rate');
+
+  ctrEl.addEventListener('input', () => {
+    document.getElementById('ctr-val').textContent = ctrEl.value + '%';
+    calculate();
+  });
+  monEl.addEventListener('input', () => {
+    document.getElementById('mon-val').textContent = monEl.value + '%';
+    calculate();
+  });
+  viewsEl.addEventListener('input', calculate);
+  nicheEl.addEventListener('change', calculate);
+
+  function calculate() {
+    const views = parseFloat(viewsEl.value) || 0;
+    const rpm = parseFloat(nicheEl.value);
+    const monRate = parseFloat(monEl.value) / 100;
+    const monViews = views * monRate;
+    const monthly = (monViews / 1000) * rpm;
+    const yearly = monthly * 12;
+    const cpm = rpm / 0.55;
+
+    document.getElementById('monthly-earn').textContent = '$' + monthly.toFixed(2);
+    document.getElementById('monthly-range').textContent =
+      'Estimated range: $' + (monthly * 0.8).toFixed(0) + ' – $' + (monthly * 1.2).toFixed(0);
+    document.getElementById('yearly-earn').textContent = '$' + yearly.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    document.getElementById('rpm-val').textContent = '$' + rpm.toFixed(2);
+    document.getElementById('mon-views').textContent = monViews.toLocaleString();
+    document.getElementById('cpm-val').textContent = '~$' + cpm.toFixed(2);
+  }
+
+  calculate();
+</script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sponsorship Rate Calculator for Creators 2025 – How Much to Charge</title>
+  <meta name="description" content="Free sponsorship rate calculator for content creators. Find out exactly how much to charge brands for sponsored posts, YouTube videos, TikToks and Instagram content." />
+  <meta name="keywords" content="sponsorship rate calculator, how much to charge for sponsored post, influencer rate calculator, creator sponsorship pricing, how much do influencers charge" />
+  <link rel="canonical" href="https://creatorcalc.com/sponsorship-rate-calculator.html" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <nav class="nav-inner">
+      <a href="index.html" class="logo">Creator<span>Calc</span></a>
+      <ul class="nav-links">
+        <li><a href="youtube-money-calculator.html">YouTube</a></li>
+        <li><a href="tiktok-engagement-calculator.html">TikTok</a></li>
+        <li><a href="sponsorship-rate-calculator.html">Sponsorships</a></li>
+        <li><a href="content-creator-income-estimator.html">Income</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="calc-page">
+  <div class="container-sm">
+    <div class="calc-page-header">
+      <div class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Sponsorship Rate Calculator</span></div>
+      <h1>Sponsorship Rate Calculator for Content Creators</h1>
+      <p>Stop undercharging. Find out your true market rate for brand sponsorships across YouTube, TikTok, Instagram and podcasts.</p>
+    </div>
+    <div class="calc-layout">
+      <div class="calc-panel">
+        <h2>Your Details</h2>
+        <div class="form-group">
+          <label for="sp-platform">Platform</label>
+          <select id="sp-platform">
+            <option value="youtube">YouTube (long-form video)</option>
+            <option value="tiktok">TikTok</option>
+            <option value="instagram">Instagram Feed / Carousel</option>
+            <option value="instagram-reel">Instagram Reel</option>
+            <option value="podcast">Podcast</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="sp-followers">Followers / Subscribers</label>
+          <div class="input-with-icon"><span class="icon">👥</span><input type="number" id="sp-followers" value="75000" min="1000" /></div>
+        </div>
+        <div class="form-group">
+          <label for="sp-avg-views">Avg. Views per Post / Video</label>
+          <div class="input-with-icon"><span class="icon">👁</span><input type="number" id="sp-avg-views" value="15000" min="0" /></div>
+        </div>
+        <div class="form-group">
+          <label for="sp-er">Engagement Rate (%)</label>
+          <div class="range-row">
+            <input type="range" id="sp-er" min="0.5" max="15" step="0.1" value="4" />
+            <span class="range-value" id="sp-er-val">4.0%</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="sp-niche">Niche</label>
+          <select id="sp-niche">
+            <option value="2.5">Finance / Investing</option>
+            <option value="2.0">Business / Marketing</option>
+            <option value="1.8">Tech / SaaS</option>
+            <option value="1.5">AI & Productivity</option>
+            <option value="1.3" selected>Education / How-To</option>
+            <option value="1.0">Lifestyle / Fitness</option>
+            <option value="0.9">Gaming</option>
+            <option value="0.8">Entertainment</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="sp-placement">Placement Type</label>
+          <select id="sp-placement">
+            <option value="0.6">Brief Mention / Shoutout (30s)</option>
+            <option value="1.0" selected>Mid-Roll Integration (60–90s)</option>
+            <option value="1.5">Dedicated Sponsored Content</option>
+            <option value="2.0">Exclusive Sponsorship (full video)</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" style="width:100%;margin-top:8px;" onclick="calcSponsor()">Calculate My Rate →</button>
+      </div>
+      <div class="calc-panel">
+        <h2>Your Sponsorship Rate</h2>
+        <div class="result-main">
+          <div class="result-label">Recommended Rate</div>
+          <div class="result-value" id="sp-rate">$1,875</div>
+          <div class="result-sub" id="sp-range">Negotiation range: $1,500 – $2,250</div>
+        </div>
+        <div class="result-breakdown">
+          <div class="breakdown-row"><span class="bl">Base Rate (CPM model)</span><span class="bv" id="sp-base">$750</span></div>
+          <div class="breakdown-row"><span class="bl">Engagement Multiplier</span><span class="bv green" id="sp-er-mult">×1.5</span></div>
+          <div class="breakdown-row"><span class="bl">Niche Premium</span><span class="bv yellow" id="sp-niche-mult">×1.3</span></div>
+          <div class="breakdown-row"><span class="bl">Placement Factor</span><span class="bv" id="sp-place-mult">×1.0</span></div>
+          <div class="breakdown-row"><span class="bl">Usage Rights (add-on)</span><span class="bv">+20–30%</span></div>
+        </div>
+        <p style="font-size:0.78rem; color:var(--text-dim); margin-top:16px; line-height:1.6;">
+          💡 Always add 20–30% for usage rights if the brand wants to repurpose your content.
+        </p>
+      </div>
+    </div>
+    <div class="ad-slot">Advertisement</div>
+    <div class="seo-content">
+      <h2>How Much Should You Charge for a Sponsored Post in 2025?</h2>
+      <p>The most common formula brands use is a <strong>CPM-based model</strong>: $10–$20 per 1,000 views or followers. But this is just a starting point. In 2025, smart creators factor in engagement rate, niche, and content type to negotiate significantly higher rates.</p>
+      <p>A YouTube creator with 100K subscribers might charge anywhere from <strong>$500 to $5,000</strong> per integration depending on their niche and engagement. Finance and SaaS sponsors pay premium rates because their CAC (customer acquisition cost) is high, meaning they can afford to pay creators more.</p>
+
+      <h2>Sponsorship Rate Ranges by Platform (2025)</h2>
+      <div style="overflow-x:auto; margin: 20px 0;">
+        <table style="width:100%; border-collapse:collapse; font-size:0.875rem;">
+          <thead>
+            <tr style="background:var(--surface); text-align:left;">
+              <th style="padding:12px 16px; border-bottom:1px solid var(--border);">Platform</th>
+              <th style="padding:12px 16px; border-bottom:1px solid var(--border);">10K Followers</th>
+              <th style="padding:12px 16px; border-bottom:1px solid var(--border);">100K Followers</th>
+              <th style="padding:12px 16px; border-bottom:1px solid var(--border);">1M Followers</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:var(--bg2);"><td style="padding:12px 16px; border-bottom:1px solid var(--border);">YouTube (integrated)</td><td style="padding:12px 16px; border-bottom:1px solid var(--border);">$200–$500</td><td style="padding:12px 16px; border-bottom:1px solid var(--border);">$1,500–$5,000</td><td style="padding:12px 16px; border-bottom:1px solid var(--border);">$10K–$50K</td></tr>
+            <tr style="background:var(--bg3);"><td style="padding:12px 16px; border-bottom:1px solid var(--border);">TikTok</td><td style="padding:12px 16px; border-bottom:1px solid var(--border);">$100–$300</td><td style="padding:12px 16px; border-bottom:1px solid var(--border);">$500–$2,500</td><td style="padding:12px 16px; border-bottom:1px solid var(--border);">$5K–$25K</td></tr>
+            <tr style="background:var(--bg2);"><td style="padding:12px 16px; border-bottom:1px solid var(--border);">Instagram Feed</td><td style="padding:12px 16px; border-bottom:1px solid var(--border);">$100–$250</td><td style="padding:12px 16px; border-bottom:1px solid var(--border);">$500–$2,000</td><td style="padding:12px 16px; border-bottom:1px solid var(--border);">$5K–$20K</td></tr>
+            <tr style="background:var(--bg3);"><td style="padding:12px 16px;">Podcast (mid-roll)</td><td style="padding:12px 16px;">$100–$200</td><td style="padding:12px 16px;">$500–$1,500</td><td style="padding:12px 16px;">$3K–$15K</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>5 Ways to Increase Your Sponsorship Rates</h2>
+      <h3>1. Build a media kit</h3>
+      <p>Creators with a professional media kit earn 30–50% more per deal. Your kit should include demographics, engagement rate, case studies, and past brand logos. Brands see you as a professional, not a hobbyist.</p>
+      <h3>2. Niche down to increase value</h3>
+      <p>A "fitness creator" makes less than a "fitness creator for busy moms over 40." The more specific your audience, the more valuable you are to niche advertisers who would otherwise struggle to reach that segment.</p>
+      <h3>3. Always quote a package, not a one-off</h3>
+      <p>Brands prefer 3–6 month partnerships over one-off deals. Offer package pricing with a discount (e.g., 3 posts for 2.5× your single-post rate) — this looks attractive while increasing your total income per brand relationship.</p>
+      <h3>4. Charge for usage rights separately</h3>
+      <p>If a brand wants to use your content in their own paid ads, charge 20–50% extra. Many creators forget this and leave significant money on the table.</p>
+      <h3>5. Audit your rate annually</h3>
+      <p>Most creators set their rate once and never update it. Your rate should increase as your engagement history matures and your audience data becomes more proven.</p>
+
+      <hr class="divider" />
+      <h2>FAQ</h2>
+      <div class="faq-item"><div class="faq-q">Should I charge per post or per 1,000 views?</div><div class="faq-a">For established creators, per-post pricing is standard and easier to negotiate. CPM-based pricing is better for smaller creators or when pitching to brands who want performance-based agreements.</div></div>
+      <div class="faq-item"><div class="faq-q">How do I respond when a brand low-balls me?</div><div class="faq-a">Counter with your rate and justify it with data: "Based on my 4.5% engagement rate and 50K targeted followers in the [niche] space, my rate is $X. This is in line with industry benchmarks for my audience size and engagement." Data kills low-ball offers.</div></div>
+      <div class="faq-item"><div class="faq-q">Do I need a contract for sponsorships?</div><div class="faq-a">Yes, always. At minimum get the brand to confirm deliverables, payment terms, approval process, and usage rights in writing via email. For deals over $1K, use a proper creator contract template.</div></div>
+    </div>
+  </div>
+</main>
+<section class="related-section">
+  <div class="container">
+    <h2 class="section-title">More Creator Tools</h2>
+    <div class="tools-grid" style="grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));">
+      <a href="youtube-money-calculator.html" class="tool-card"><div class="tool-icon" style="background:rgba(255,0,0,0.12)">📺</div><div class="tool-tag tag-youtube">YouTube</div><h3>YouTube Money Calculator</h3><p>Estimate ad revenue from your YouTube views.</p></a>
+      <a href="content-creator-income-estimator.html" class="tool-card"><div class="tool-icon" style="background:rgba(124,58,237,0.12)">📊</div><div class="tool-tag tag-income">All Platforms</div><h3>Creator Income Estimator</h3><p>Add up all income streams into one projection.</p></a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer"><div class="container"><div class="footer-links"><a href="index.html">Home</a><a href="youtube-money-calculator.html">YouTube</a><a href="tiktok-engagement-calculator.html">TikTok</a></div><p>© 2025 CreatorCalc.</p></div></footer>
+<script src="js/main.js"></script>
+<script>
+  document.getElementById('sp-er').addEventListener('input', () => {
+    document.getElementById('sp-er-val').textContent = parseFloat(document.getElementById('sp-er').value).toFixed(1) + '%';
+    calcSponsor();
+  });
+  ['sp-platform','sp-followers','sp-avg-views','sp-niche','sp-placement'].forEach(id => {
+    document.getElementById(id).addEventListener('input', calcSponsor);
+    document.getElementById(id).addEventListener('change', calcSponsor);
+  });
+  function calcSponsor() {
+    const followers = parseFloat(document.getElementById('sp-followers').value) || 0;
+    const views = parseFloat(document.getElementById('sp-avg-views').value) || followers * 0.1;
+    const er = parseFloat(document.getElementById('sp-er').value);
+    const niche = parseFloat(document.getElementById('sp-niche').value);
+    const placement = parseFloat(document.getElementById('sp-placement').value);
+    const platform = document.getElementById('sp-platform').value;
+
+    const platformBase = { youtube: 15, tiktok: 8, instagram: 10, 'instagram-reel': 9, podcast: 12 };
+    const cpm = platformBase[platform] || 10;
+    const base = (views / 1000) * cpm;
+    const erMult = Math.max(0.5, Math.min(3, er / 3));
+    const rate = base * erMult * niche * placement;
+
+    document.getElementById('sp-rate').textContent = '$' + Math.round(rate).toLocaleString();
+    document.getElementById('sp-range').textContent = 'Negotiation range: $' + Math.round(rate * 0.8).toLocaleString() + ' – $' + Math.round(rate * 1.2).toLocaleString();
+    document.getElementById('sp-base').textContent = '$' + Math.round(base).toLocaleString();
+    document.getElementById('sp-er-mult').textContent = '×' + erMult.toFixed(2);
+    document.getElementById('sp-niche-mult').textContent = '×' + niche.toFixed(1);
+    document.getElementById('sp-place-mult').textContent = '×' + placement.toFixed(1);
+  }
+  calcSponsor();
+</script>
+</body>
+</html>

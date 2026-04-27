@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TikTok Engagement Rate Calculator 2025 – Free & Instant</title>
+  <meta name="description" content="Free TikTok engagement rate calculator. Enter your followers, likes, comments, and shares to instantly calculate your TikTok engagement rate and benchmark against top creators." />
+  <meta name="keywords" content="tiktok engagement rate calculator, tiktok engagement rate, how to calculate tiktok engagement, tiktok analytics tool, tiktok rate calculator" />
+  <link rel="canonical" href="https://creatorcalc.com/tiktok-engagement-calculator.html" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <nav class="nav-inner">
+      <a href="index.html" class="logo">Creator<span>Calc</span></a>
+      <ul class="nav-links">
+        <li><a href="youtube-money-calculator.html">YouTube</a></li>
+        <li><a href="tiktok-engagement-calculator.html">TikTok</a></li>
+        <li><a href="sponsorship-rate-calculator.html">Sponsorships</a></li>
+        <li><a href="content-creator-income-estimator.html">Income</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="calc-page">
+  <div class="container-sm">
+
+    <div class="calc-page-header">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span>TikTok Engagement Rate Calculator</span>
+      </div>
+      <h1>TikTok Engagement Rate Calculator</h1>
+      <p>Calculate your TikTok engagement rate in seconds. See how you compare to industry benchmarks and what brands are willing to pay.</p>
+    </div>
+
+    <div class="calc-layout">
+      <div class="calc-panel">
+        <h2>Your TikTok Stats</h2>
+
+        <div class="form-group">
+          <label for="tt-followers">Total Followers</label>
+          <div class="input-with-icon">
+            <span class="icon">👥</span>
+            <input type="number" id="tt-followers" placeholder="e.g. 50000" value="50000" min="1" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="tt-likes">Avg. Likes per Video</label>
+          <div class="input-with-icon">
+            <span class="icon">❤️</span>
+            <input type="number" id="tt-likes" placeholder="e.g. 2500" value="2500" min="0" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="tt-comments">Avg. Comments per Video</label>
+          <div class="input-with-icon">
+            <span class="icon">💬</span>
+            <input type="number" id="tt-comments" placeholder="e.g. 80" value="80" min="0" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="tt-shares">Avg. Shares per Video</label>
+          <div class="input-with-icon">
+            <span class="icon">🔁</span>
+            <input type="number" id="tt-shares" placeholder="e.g. 150" value="150" min="0" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="tt-videos">Videos Analyzed (last 30 days)</label>
+          <input type="number" id="tt-videos" placeholder="e.g. 15" value="15" min="1" />
+        </div>
+
+        <button class="btn btn-primary" style="width:100%;margin-top:8px;" onclick="calcTT()">
+          Calculate Engagement →
+        </button>
+      </div>
+
+      <div class="calc-panel">
+        <h2>Your Results</h2>
+
+        <div class="result-main">
+          <div class="result-label">Engagement Rate</div>
+          <div class="result-value" id="tt-er">5.46%</div>
+          <div class="result-sub" id="tt-rating">⭐ Above Average</div>
+        </div>
+
+        <div class="result-breakdown">
+          <div class="breakdown-row">
+            <span class="bl">Total Interactions/Video</span>
+            <span class="bv" id="tt-total-int">2,730</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="bl">Monthly Total Interactions</span>
+            <span class="bv" id="tt-month-int">40,950</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="bl">Industry Average ER</span>
+            <span class="bv yellow">4.1%</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="bl">Your ER vs Average</span>
+            <span class="bv green" id="tt-vs-avg">+33%</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="bl">Suggested Sponsorship Rate</span>
+            <span class="bv green" id="tt-sponsor-est">$250–$500</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AD SLOT MIDDLE -->
+    <div class="ad-slot">Advertisement</div>
+
+    <!-- BENCHMARK TABLE -->
+    <div class="seo-content">
+      <h2>TikTok Engagement Rate Benchmarks 2025</h2>
+      <p>Understanding where you stand is the first step to growing your TikTok presence and landing brand deals. Here are the industry benchmarks by creator tier:</p>
+
+      <div style="overflow-x:auto; margin: 20px 0;">
+        <table style="width:100%; border-collapse:collapse; font-size:0.9rem;">
+          <thead>
+            <tr style="background:var(--surface); text-align:left;">
+              <th style="padding:12px 16px; border-bottom:1px solid var(--border);">Creator Tier</th>
+              <th style="padding:12px 16px; border-bottom:1px solid var(--border);">Followers</th>
+              <th style="padding:12px 16px; border-bottom:1px solid var(--border);">Avg ER</th>
+              <th style="padding:12px 16px; border-bottom:1px solid var(--border);">Good ER</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:var(--bg2);">
+              <td style="padding:12px 16px; border-bottom:1px solid var(--border); color:var(--text-muted);">Nano</td>
+              <td style="padding:12px 16px; border-bottom:1px solid var(--border);">1K–10K</td>
+              <td style="padding:12px 16px; border-bottom:1px solid var(--border);">7–9%</td>
+              <td style="padding:12px 16px; border-bottom:1px solid var(--border); color:var(--success);">>10%</td>
+            </tr>
+            <tr style="background:var(--bg3);">
+              <td style="padding:12px 16px; border-bottom:1px solid var(--border); color:var(--text-muted);">Micro</td>
+              <td style="padding:12px 16px; border-bottom:1px solid var(--border);">10K–100K</td>
+              <td style="padding:12px 16px; border-bottom:1px solid var(--border);">4–6%</td>
+              <td style="padding:12px 16px; border-bottom:1px solid var(--border); color:var(--success);">>7%</td>
+            </tr>
+            <tr style="background:var(--bg2);">
+              <td style="padding:12px 16px; border-bottom:1px solid var(--border); color:var(--text-muted);">Mid-Tier</td>
+              <td style="padding:12px 16px; border-bottom:1px solid var(--border);">100K–500K</td>
+              <td style="padding:12px 16px; border-bottom:1px solid var(--border);">2.5–4%</td>
+              <td style="padding:12px 16px; border-bottom:1px solid var(--border); color:var(--success);">>5%</td>
+            </tr>
+            <tr style="background:var(--bg3);">
+              <td style="padding:12px 16px; border-bottom:1px solid var(--border); color:var(--text-muted);">Macro</td>
+              <td style="padding:12px 16px; border-bottom:1px solid var(--border);">500K–1M</td>
+              <td style="padding:12px 16px; border-bottom:1px solid var(--border);">1.5–2.5%</td>
+              <td style="padding:12px 16px; border-bottom:1px solid var(--border); color:var(--success);">>3%</td>
+            </tr>
+            <tr style="background:var(--bg2);">
+              <td style="padding:12px 16px; color:var(--text-muted);">Mega</td>
+              <td style="padding:12px 16px;">1M+</td>
+              <td style="padding:12px 16px;">0.5–1.5%</td>
+              <td style="padding:12px 16px; color:var(--success);">>2%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>What is a Good TikTok Engagement Rate?</h2>
+      <p>TikTok consistently has the <strong>highest engagement rates</strong> of any social platform. While Instagram averages around 1–3% engagement, TikTok averages 4.1% across all creator sizes. This is largely because TikTok's algorithm surfaces content based on interest signals, not just follower relationships.</p>
+      <p>A <strong>good TikTok engagement rate</strong> in 2025 is anything above 4%. Rates above 8% are considered excellent and will attract top-tier brand deal offers.</p>
+
+      <h2>How Brands Use Engagement Rate</h2>
+      <p>When brands evaluate creators for sponsorships, engagement rate is often more important than raw follower count. A creator with 50K followers and 8% ER will typically earn <strong>more per post</strong> than a creator with 200K followers at 1.5% ER. This is why calculating your true engagement rate matters before any brand negotiation.</p>
+
+      <hr class="divider" />
+
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <div class="faq-q">How is TikTok engagement rate calculated?</div>
+        <div class="faq-a">TikTok ER = (Total Interactions ÷ Followers) × 100. Total interactions include likes, comments, and shares per video. We recommend calculating the average over your last 10–20 videos for accuracy.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Does TikTok views count as engagement?</div>
+        <div class="faq-a">Views are not included in standard engagement rate calculations because views are passive. Brands focus on active interactions — likes, comments, shares, and saves — as these indicate real audience investment.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Why is my TikTok engagement rate dropping?</div>
+        <div class="faq-a">Common causes: posting frequency changes, niche drift (content no longer matching audience expectations), or algorithmic shifts. Analyze your last 30 videos to identify which content types drive the most interaction.</div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<section class="related-section">
+  <div class="container">
+    <h2 class="section-title">More Creator Tools</h2>
+    <div class="tools-grid" style="grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));">
+      <a href="youtube-money-calculator.html" class="tool-card">
+        <div class="tool-icon" style="background:rgba(255,0,0,0.12)">📺</div>
+        <div class="tool-tag tag-youtube">YouTube</div>
+        <h3>YouTube Money Calculator</h3>
+        <p>Estimate monthly and yearly YouTube ad revenue.</p>
+      </a>
+      <a href="instagram-engagement-calculator.html" class="tool-card">
+        <div class="tool-icon" style="background:rgba(225,48,108,0.12)">📸</div>
+        <div class="tool-tag tag-instagram">Instagram</div>
+        <h3>Instagram Engagement Rate Calculator</h3>
+        <p>Calculate your Instagram engagement rate instantly.</p>
+      </a>
+      <a href="sponsorship-rate-calculator.html" class="tool-card">
+        <div class="tool-icon" style="background:rgba(16,185,129,0.12)">💰</div>
+        <div class="tool-tag tag-money">Earnings</div>
+        <h3>Sponsorship Rate Calculator</h3>
+        <p>Know your market value before talking to brands.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="youtube-money-calculator.html">YouTube</a>
+      <a href="tiktok-engagement-calculator.html">TikTok</a>
+      <a href="sponsorship-rate-calculator.html">Sponsorships</a>
+    </div>
+    <p>© 2025 CreatorCalc. Estimates are for educational purposes only.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  ['tt-followers','tt-likes','tt-comments','tt-shares','tt-videos'].forEach(id => {
+    document.getElementById(id).addEventListener('input', calcTT);
+  });
+
+  function calcTT() {
+    const followers = parseFloat(document.getElementById('tt-followers').value) || 1;
+    const likes = parseFloat(document.getElementById('tt-likes').value) || 0;
+    const comments = parseFloat(document.getElementById('tt-comments').value) || 0;
+    const shares = parseFloat(document.getElementById('tt-shares').value) || 0;
+    const videos = parseFloat(document.getElementById('tt-videos').value) || 1;
+    const totalInt = likes + comments + shares;
+    const er = (totalInt / followers) * 100;
+    const monthInt = totalInt * videos;
+
+    document.getElementById('tt-er').textContent = er.toFixed(2) + '%';
+    document.getElementById('tt-total-int').textContent = totalInt.toLocaleString();
+    document.getElementById('tt-month-int').textContent = monthInt.toLocaleString();
+
+    const avg = 4.1;
+    const vsAvg = ((er - avg) / avg * 100);
+    const vsEl = document.getElementById('tt-vs-avg');
+    vsEl.textContent = (vsAvg >= 0 ? '+' : '') + vsAvg.toFixed(0) + '%';
+    vsEl.className = 'bv ' + (vsAvg >= 0 ? 'green' : 'danger');
+
+    // Rating
+    let rating = '';
+    if (er >= 8) rating = '🏆 Excellent';
+    else if (er >= 4) rating = '⭐ Above Average';
+    else if (er >= 2) rating = '📊 Average';
+    else rating = '⚠️ Below Average';
+    document.getElementById('tt-rating').textContent = rating;
+
+    // Sponsorship estimate (rough $10 per 1000 followers * er modifier)
+    const base = followers / 1000 * 10 * (er / 4.1);
+    document.getElementById('tt-sponsor-est').textContent =
+      '$' + Math.round(base * 0.8).toLocaleString() + '–$' + Math.round(base * 1.2).toLocaleString();
+  }
+
+  calcTT();
+</script>
+</body>
+</html>
