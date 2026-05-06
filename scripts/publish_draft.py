@@ -18,23 +18,20 @@ with open(draft_to_publish, 'r', encoding='utf-8') as f:
     content = f.read()
 
 # Extract Title
-title_match = re.search(r'<title>(.*?) - CreatorTools</title>', content)
-title = title_match.group(1) if title_match else "New Creator Strategy Article"
+title_match = re.search(r'<title>(.*?)</title>', content)
+title = title_match.group(1).replace(' - CreatorTools', '').replace(' - CreatorCalc', '') if title_match else "New Creator Strategy Article"
 
 # Generate Snippet
 today = datetime.now().strftime("%B %d, %Y")
 snippet = f"""
     <!-- Auto Published Article -->
-    <a href="{filename}" class="article-card">
-      <div class="article-img">🚀</div>
-      <div class="article-content">
-        <div class="article-category">Creator Strategy</div>
-        <h2 class="article-title">{title}</h2>
-        <p class="article-excerpt">Discover our latest veterinary-approved guide to keeping your pets happy, healthy, and safe.</p>
-        <div class="article-meta">
-          <span>By CreatorTools Team</span>
-          <span>{today}</span>
-        </div>
+    <a href="{filename}" class="blog-card">
+      <div style="margin-bottom: 12px;"><span class="blog-tag">Creator Strategy</span></div>
+      <h3>{title}</h3>
+      <p>Master the latest strategies for content creation, monetization, and audience growth with our expert-led guides.</p>
+      <div class="blog-meta">
+        <span>By CreatorTools Team</span>
+        <span>{today}</span>
       </div>
     </a>
 """
@@ -43,7 +40,7 @@ snippet = f"""
 with open('blog/index.html', 'r', encoding='utf-8') as f:
     index_content = f.read()
 
-index_content = index_content.replace('<div class="article-grid">', f'<div class="article-grid">\n{snippet}')
+index_content = index_content.replace('<div class="blog-grid" style="max-width: 800px; margin: 0 auto;">', f'<div class="blog-grid" style="max-width: 800px; margin: 0 auto;">\n{snippet}')
 
 with open('blog/index.html', 'w', encoding='utf-8') as f:
     f.write(index_content)
