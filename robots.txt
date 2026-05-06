@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://creatorcalc.com/sitemap.xml
+Sitemap: https://creator-tools-woad.vercel.app/sitemap.xml
