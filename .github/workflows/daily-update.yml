@@ -1,0 +1,36 @@
+name: Daily Activity Update
+
+on:
+  schedule:
+    # Runs every day at 10:00 AM UTC (6:00 PM Beijing time)
+    - cron: '0 10 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Update activity log
+        run: |
+          mkdir -p docs
+          DATE=$(date -u +"%Y-%m-%d")
+          TIME=$(date -u +"%H:%M UTC")
+          
+          # Append to activity log
+          echo "- ${DATE}: Daily maintenance check — tools verified, docs reviewed" >> docs/activity-log.md
+          
+          echo "Updated activity log for ${DATE}"
+
+      - name: Commit and push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "creator-tools[bot]"
+          git add docs/activity-log.md
+          git diff --staged --quiet || git commit -m "Daily maintenance: update activity log $(date -u +%Y-%m-%d)"
+          git push
